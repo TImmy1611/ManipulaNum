@@ -16,6 +16,8 @@ public class Manipulacao {
             System.out.println("2- Ordenar valores em decrescente");
             System.out.println("3- Soma Impares Multiplica Pares");
             System.out.println("4- Troca valores entre variáveis");
+            System.out.println("5- Comparar Valores");
+            System.out.println("6- Media Alunos");
 
             System.out.println("0.Sair");
             System.out.println("Selecione a opção pretendida");
@@ -37,8 +39,16 @@ public class Manipulacao {
                 case 3:
                     SomaImparesMultiplicaPares();
                     break;
-                case 4: leValores("Insira um valor", "Insira outro valor");
-                    TrocaValores.mudaValoresVariaveis(x,y);
+                case 4:
+                    leValores("Insira um valor", "Insira outro valor");
+                    TrocaValores.mudaValoresVariaveis(x, y);
+                    break;
+                case 5:
+                    leValores("Insira um valor", "Insira outro valor");
+                    ComparaValores.compararvalores(x, y);
+                    break;
+                case 6:
+                    MediaAluno.registanotas();
                     break;
                 default:
                     System.out.println("Insira opção Válida");
