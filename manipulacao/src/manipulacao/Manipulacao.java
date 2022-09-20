@@ -18,6 +18,7 @@ public class Manipulacao {
             System.out.println("4- Troca valores entre variáveis");
             System.out.println("5- Comparar Valores");
             System.out.println("6- Media Alunos");
+            System.out.println("7- Calcular custo de carro");
 
             System.out.println("0.Sair");
             System.out.println("Selecione a opção pretendida");
@@ -49,6 +50,9 @@ public class Manipulacao {
                     break;
                 case 6:
                     MediaAluno.registanotas();
+                    break;
+                case 7:
+                    Carro.custocarro();
                     break;
                 default:
                     System.out.println("Insira opção Válida");

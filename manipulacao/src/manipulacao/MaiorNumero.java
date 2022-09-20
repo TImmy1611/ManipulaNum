@@ -1,6 +1,6 @@
 package manipulacao;
 
-import java.util.Scanner;
+
 
 public class MaiorNumero {
 
