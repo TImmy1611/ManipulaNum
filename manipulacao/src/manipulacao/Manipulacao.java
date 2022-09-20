@@ -15,6 +15,7 @@ public class Manipulacao {
             System.out.println("1- Maior de 2 numeros");
             System.out.println("2- Ordenar valores em decrescente");
             System.out.println("3- Soma Impares Multiplica Pares");
+            System.out.println("4- Troca valores entre variáveis");
 
             System.out.println("0.Sair");
             System.out.println("Selecione a opção pretendida");
@@ -36,6 +37,9 @@ public class Manipulacao {
                 case 3:
                     SomaImparesMultiplicaPares();
                     break;
+                case 4: leValores("Insira um valor", "Insira outro valor");
+                    TrocaValores.mudaValoresVariaveis(x,y);
+                    break;
                 default:
                     System.out.println("Insira opção Válida");
             }
@@ -56,6 +60,17 @@ public class Manipulacao {
     }
 
     private static void SomaImparesMultiplicaPares() {
-        
+        int soma = 0;
+        long multiplica = 1;
+        x = 1;
+        for (; x <= 30; x++) {
+            if (x % 2 != 0) {
+                soma = soma + x;
+            } else {
+                multiplica = multiplica * x;
+            }
+        }
+        System.out.println(soma);
+        System.out.println(multiplica);
     }
 }
